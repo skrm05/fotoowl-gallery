@@ -42,8 +42,7 @@ Follow these steps to run the project on your computer:
 1.  **Clone the Repository:**
 
     ```bash
-    git clone [Your-GitHub-Repo-Link]
-    cd [Your-Folder-Name]
+    git clone https://github.com/skrm05/fotoowl-gallery.git
     ```
 
 2.  **Install Dependencies:**
