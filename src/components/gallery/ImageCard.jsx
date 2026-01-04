@@ -57,6 +57,7 @@ const ImageCard = ({ image, onClick }) => {
         <div className="text-white text-xs truncate max-w-[60%]">
           By {image.user.name}
         </div>
+
         <div className="relative group/reaction">
           <div className="absolute bottom-full right-0 pb-2 hidden group-hover/reaction:flex flex-col items-end z-20 animate-in slide-in-from-bottom-1 duration-200">
             <div className="bg-white rounded-full shadow-lg border border-gray-100 p-1 flex gap-1">
@@ -72,8 +73,7 @@ const ImageCard = ({ image, onClick }) => {
             </div>
           </div>
 
-          {/* Trigger Button */}
-          <button className="flex items-center gap-1.5 text-white bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full hover:bg-white/20 transition-colors">
+          <button className="flex items-center gap-1.5 text-white bg-white/10 backdrop-blur-sm p-4 sm:px-3 sm:py-1.5 rounded-full hover:bg-white/20 transition-colors">
             {myReaction ? (
               <span className="text-lg leading-none">{myReaction.emoji}</span>
             ) : (
