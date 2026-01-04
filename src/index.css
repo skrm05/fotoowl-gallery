@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+
+.instant-devtool-toggler{
+    display: none !important;
+}
