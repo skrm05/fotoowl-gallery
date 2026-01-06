@@ -14,6 +14,8 @@ const ImageGrid = () => {
     isFetchingNextPage,
   } = useUnsplashImages();
 
+  console.log("Data=> ", data);
+
   const [selectedImage, setSelectedImage] = useState(null);
 
   const handleImageClick = (image) => {

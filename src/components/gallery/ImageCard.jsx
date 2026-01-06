@@ -16,7 +16,6 @@ const ImageCard = ({ image, onClick }) => {
       },
     },
   });
-
   const reactions = data?.reactions || [];
   const myReaction = reactions.find((r) => r.userId === currentUser?.id);
 

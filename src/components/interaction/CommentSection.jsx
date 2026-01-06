@@ -60,7 +60,6 @@ const CommentSection = ({ imageId, imageThumbnail }) => {
     [commentText, currentUser, imageId, imageThumbnail]
   );
 
-  // ✅ New Delete Function
   const handleDelete = (commentId) => {
     if (window.confirm("Delete this comment?")) {
       db.transact(tx.interactions[commentId].delete());
@@ -110,7 +109,6 @@ const CommentSection = ({ imageId, imageThumbnail }) => {
                   </span>
                 </div>
 
-                {/* ✅ Delete Button (Only visible for own comments) */}
                 {currentUser?.id === comment.userId && (
                   <button
                     onClick={() => handleDelete(comment.id)}
